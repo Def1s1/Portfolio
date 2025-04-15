@@ -1,0 +1,16 @@
+.cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none; /* so it doesn't block clicks */
+    width: 30px;  /* circle diameter */
+    height: 30px; 
+    margin-left: -15px; /* half of width, so it centers on cursor */
+    margin-top: -15px;  /* half of height */
+    border-radius: 50%;
+    background-color: rgba(255, 0, 0, 0.3); /* red circle, lightly transparent */
+    backdrop-filter: blur(4px);
+    z-index: 9999; /* put it on top of most elements */
+    transition: transform 0.1s ease-out; /* smooth movement */
+  }
+  
