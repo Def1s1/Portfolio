@@ -11,29 +11,19 @@ export default function ProjectSection() {
 
   const projects = [
     {
-      name: "Personal Finance Manager",
-      stack: ["React", "Redux", "React i18n"],
+      name: "SmartBudget - ios/anroid app",
+      stack: ["React Native", "Expo", "Tailwind CSS"],
       image: "/projects/epikcart.png",
     },
     {
-      name: "Resume Roaster",
-      stack: ["GPT-4", "Next.js", "PostgreSQL"],
+      name: "Freelink",
+      stack: ["Supabase", "Next.js", "Tailwind CSS"],
       image: "/projects/resume-roaster.png",
     },
     {
       name: "Real Estate",
       stack: ["React.js", "Redux", "Tailwind CSS"],
       image: "/projects/real-estate.png",
-    },
-    {
-      name: "Consulting Finance",
-      stack: ["HTML", "CSS & SCSS", "JavaScript"],
-      image: "/projects/finance.png",
-    },
-    {
-      name: "devLinks",
-      stack: ["Next.js", "Formik", "Drag & Drop"],
-      image: "/projects/devlinks.png",
     },
   ];
 
