@@ -15,11 +15,9 @@ export default function MyStackSection() {
     "Next.js",
     "Tailwind CSS",
     "GSAP",
-    "Framer Motion",
     "JavaScript",
     "TypeScript",
     "HTML",
-    "SCSS",
     "Git",
     "Vercel",
     "Figma"
