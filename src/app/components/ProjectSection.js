@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -11,19 +12,22 @@ export default function ProjectSection() {
 
   const projects = [
     {
+      name: "Portfolio",
+      stack: ["GASP", "Next.js", "Tailwind CSS"],
+      image: "Portfolio.png",
+      url: "https://defportfolio.vercel.app/"
+    },
+    {
       name: "SmartBudget - ios/anroid app",
       stack: ["React Native", "Expo", "Tailwind CSS"],
-      image: "/projects/epikcart.png",
+      image: "/SmartBudget.png",
+      url: "https://github.com/Def1s1/SmartBudget"
     },
     {
-      name: "Freelink",
-      stack: ["Supabase", "Next.js", "Tailwind CSS"],
-      image: "/projects/resume-roaster.png",
-    },
-    {
-      name: "Real Estate",
-      stack: ["React.js", "Redux", "Tailwind CSS"],
-      image: "/projects/real-estate.png",
+      name: "Tracky",
+      stack: ["React", "Supabase", "Tailwind CSS"],
+      image: "/hero.webp",
+      url: "https://www.trackyapp.xyz/"
     },
   ];
 
@@ -73,10 +77,12 @@ export default function ProjectSection() {
               <div className="text-sm text-white/40 mb-1">
                 .{String(index + 1).padStart(2, "0")}.
               </div>
-
+              
+              <Link href={project.url}>
               <h3 className="text-xl font-semibold text-[#00FF6C] mb-2 group-hover:underline transition">
                 {project.name}
               </h3>
+              </Link>
 
               <p className="text-sm text-white/70 leading-relaxed">
                 {project.stack.join(" • ")}
